@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0ad8a6b28f.js" crossorigin="anonymous">
+    </script>
+
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poiret+One&Display=swap");
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0A1828;
+            color: #BFA181;
+            font-size: 19px;
+
+            font-family: "Poiret One", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(rgb(0, 21, 20, 0.65), rgb(0, 21, 20, 0.65)), url(slike/background.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 10px 8%;
+            background-attachment: fixed;
+
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+
+        }
+
+        .logo1 {
+            width: 180px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            padding-right: 60px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 20px;
+
+
+        }
+
+        nav ul li a {
+            color: #BFA181;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        .content {
+            margin-top: 14%;
+            color: black;
+            max-width: 620px;
+        }
+
+        .content .img .image {
+            width: 650px;
+            height: 600px;
+            position: relative;
+            left: 500px;
+            top: -150px;
+            bottom: 0px;
+        }
+
+        .title-box {
+            margin: 20px;
+            padding: 100px;
+            font-size: 70px;
+        }
+
+
+        h1 {
+            font-size: 70px;
+            color: #178582;
+            margin-left: 700px;
+        }
+
+        .imgbox {
+            width: 50%;
+            height: 550px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .toping {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5%;
+
+        }
+
+
+        .textbox {
+            position: relative;
+            width: 50%;
+            float: left;
+            padding: 20px;
+
+
+        }
+
+        p {
+            font-weight: bold;
+            text-align: justify;
+            font-size: 30px;
+        }
+
+        span {
+            font-size: 70px;
+            font-weight: 900;
+            color: #178582;
+        }
+
+        .galery-box {
+            margin-top: 700px;
+            padding: 80px;
+            justify-content: center;
+
+        }
+
+        .image-box {
+            width: 400px;
+            height: auto;
+            float: left;
+            padding: 5px;
+
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .photos {
+            width: 3000px;
+            animation: 30s slide;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes slide {
+            0% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: -3000px;
+            }
+        }
+
+        .collage {
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        .post-box {
+            margin-top: 100px;
+            padding: 80px;
+            justify-content: center;
+        }
+
+        .imagebox {
+            width: 50%;
+            height: 550px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .toping2 {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            padding: 20px;
+
+        }
+
+        .textbox2 {
+            width: 48%;
+            float: left;
+            margin-left: 20px;
+            padding: 10px;
+        }
+
+        i {
+            padding-left: 20px;
+            font-size: 6vw;
+        }
+
+
+        @media (max-width:1100px) {
+            .imgbox {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            .textbox {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+        }
+
+        footer {
+            background-color: #0A1828;
+
+        }
+
+        #contener {
+            width: 1140px;
+            margin-top: 600px;
+            display: flex;
+            justify-content: center;
+            margin-left: 250px;
+
+
+
+
+
+
+        }
+
+        .footer-content {
+            width: 33.3%;
+            margin-left: 200px;
+            padding: 50px;
+
+
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: Georgia, serif;
+
+        }
+
+        .footer-content p {
+            font-size: 20px;
+            width: 190px;
+            margin: auto;
+            padding: 7px;
+            color: white;
+            font-family: Georgia, serif;
+        }
+
+
+        .footer-content ul {
+            text-align: center;
+        }
+
+        .list {
+            padding: 0;
+
+
+        }
+
+        .list li {
+            width: auto;
+            text-align: center;
+            list-style-type: none;
+            padding: 7px;
+            position: relative;
+        }
+
+        .list li::before {
+            content: "";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 100%;
+            width: 0;
+            height: 2px;
+            background: black;
+            transition-duration: .5s;
+        }
+
+        .list li::hover::before {
+            width: 70px;
+        }
+
+        .list a {
+            color: white;
+            font-family: Georgia, serif;
+        }
+
+        .social-icons {
+            text-align: center;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        .social-icons i {
+            color: white;
+            font-size: 25px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .social-icons i:hover {
+            color: black;
+        }
+
+        .button-bar {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 10px 0px;
+            margin-top: 50px;
+        }
+
+        .button-bar p {
+            color: #191919;
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
+            margin-left: 800px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <img src="slike/logo2.png" alt="" class="logo1">
+            <ul>
+                <li><a href="#blog">MyBlog</a></li>
+                <li><a href="#galery">Galery</a></li>
+                <li><a href="#post">NewPost</a></li>
+                <li><a href="#contener">Social</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="img">
+                <img src="slike/logo2.png" alt="" class="image">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title-box" id="blog">
+        <h1>MY BLOG</h1>
+    </div>
+
+    <div class="textbox">
+        <span>About me</span>
+        <p>Twenty-two-year-old student, in the third year of software and information engineering at Singidunum
+            University in Belgrade. I am currently looking to expand my skills in new fields of programming and looking
+            for an internship opportunity to gain additional industry experience, especially in areas such as front end
+            developer, web application development, mobile application development, full stack developer, QA tester.
+            Motivated, responsible, diligent, communicative, dedicated to constant learning and professional
+            development. I learn English (B1 level). I am a team worker and communication with my colleagues is my
+            number one priority in performing work. I easily adapt to the work environment.</p>
+    </div>
+    <div class="imgbox">
+        <img src="slike/programing.jpg" alt="" class="toping">
+    </div>
+
+    <div class="galery-box" id="galery">
+        <h1>GALERY</h1>
+    </div>
+    <div class="collage">
+        <div class="photos">
+            <div class="image-box">
+                <img src="slike/programe.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe2.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe3.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe4.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe8.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe3.jpg" alt="">
+            </div>
+            <div class="image-box">
+                <img src="slike/programe7.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="post-box" id="post">
+            <h1>NEW POST</h1>
+        </div>
+        <div class="imagebox">
+            <img src="slike/programe4.jpg" alt="" class="toping2">
+        </div>
+        <div class="textbox2">
+            <span>Web design</span>
+            <p>Web design is a critical aspect of online presence, blending creativity with technology to create
+                meaningful
+                experiences. By focusing on aesthetics, usability, and innovation, you can craft websites that not only
+                look
+                great but also achieve their purpose effectively. Whether you're designing for a small business, a
+                personal
+                blog, or an e-commerce platform, mastering web design opens the door to countless opportunities.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="contener">
+            <div class="footer-content">
+                <h3>Kontaktirajte nas</h3>
+                <p>Email: <br>info@gmail.com</p><br>
+                <p>Telefon: <br>066555444</p>
+            </div>
+            <div class="footer-content">
+                <h3>Linkovi</h3>
+                <ul class="list">
+                    <li><a href="#blog">MyBlog</a></li>
+                    <li><a href="#galery">Galery</a></li>
+                    <li><a href="#post">NewPost</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Zapratite nas</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a> </li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a> </li>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i></a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-bar">
+            <p>&copy: 2023 your company. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        window.addEventListener("scroll", scrollFunction)
+
+        function scrollFunction() {
+            const image = document.querySelectorAll(".toping");
+            image.forEach(image => {
+                const zoomIn = 100 + window.scrollY * 0.03;
+                image.style.width = zoomIn + '%'
+            });
+
+        }
+    </script>
+</body>
+
+</html>
